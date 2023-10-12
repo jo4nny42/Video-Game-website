@@ -116,23 +116,19 @@ a:hover{
     -webkit-user-select: none;
 }
 
-.nextPic{
+.nextPic, .nextPic2{
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-.nextPic:hover, .previousPic:hover{
+.nextPic:hover, .previousPic:hover, .nextPic2:hover, .previousPic2:hover{
     background-color: rgba(0, 0, 0, 0.8);
-}
-
-.nextPic2:hover, .previousPic2:hover{
-    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .nextPic2, .previousPic2{
     cursor: pointer;
     position: absolute;
-    bottom: 18em;
+    bottom: -10em;
     width: auto;
     padding: 16px;
     margin-top: -50px;
@@ -144,23 +140,7 @@ a:hover{
     -webkit-user-select: none;
 }
 
-.nextPic2{
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.capTextCont{
-    border: 5px;
-    text-align: center;
-    font-family: hyrule;
-    border-style: solid;
-    border-radius: 10px;
-    padding: 2px 16px;
-    color: rgb(2, 2, 2);
-    background:linear-gradient(45deg, rgb(216, 96, 96), green, rgb(37, 37, 180));
-}
-
-.capTextCont2{
+.capTextCont, .capTextCont2{
     border: 5px;
     text-align: center;
     font-family: hyrule;
@@ -183,12 +163,7 @@ a:hover{
     width: 16.66%;
   }
   
-  .demo {
-    opacity: 0.6;
-    max-width: 40em;
-  }
-
-  .Demo{
+  .demo,.Demo {
     opacity: 0.6;
     max-width: 40em;
   }
@@ -271,6 +246,10 @@ a:hover{
 .zelda2{
     max-width: 15em;
     left: 30em;
+}
+
+.mm{
+    max-width: 15em;
 }
 
 .timeline1{
