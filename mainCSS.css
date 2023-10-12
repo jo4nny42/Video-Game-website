@@ -137,6 +137,17 @@ a:hover{
     background:linear-gradient(45deg, rgb(216, 96, 96), green, rgb(37, 37, 180));
 }
 
+.capTextCont2{
+    border: 5px;
+    text-align: center;
+    font-family: hyrule;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 2px 16px;
+    color: rgb(2, 2, 2);
+    background:linear-gradient(45deg, rgb(216, 96, 96), green, rgb(37, 37, 180));
+}
+
 .row:after {
     content: "";
     display: table;
@@ -153,13 +164,21 @@ a:hover{
     opacity: 0.6;
     max-width: 40em;
   }
+
+  .Demo{
+    opacity: 0.6;
+    max-width: 40em;
+  }
   
   .active,
-  .demo:hover {
+  .demo:hover,.Demo:hover {
     opacity: 1;
   }
 
 .contentBorder{
+    display:none;
+}
+.contentBorder2{
     display:none;
 }
 
