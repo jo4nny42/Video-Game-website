@@ -99,13 +99,12 @@ a:hover{
 
 .EarlyTimeline{
     position: relative;
-    
 }
 
 .nextPic, .previousPic{
     cursor: pointer;
     position: absolute;
-    bottom: 30em;
+    bottom: 18em;
     width: auto;
     padding: 16px;
     margin-top: -50px;
@@ -124,6 +123,30 @@ a:hover{
 
 .nextPic:hover, .previousPic:hover{
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+.nextPic2:hover, .previousPic2:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nextPic2, .previousPic2{
+    cursor: pointer;
+    position: absolute;
+    bottom: 18em;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.nextPic2{
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 .capTextCont{
@@ -186,40 +209,75 @@ a:hover{
     cursor: pointer;
 }
 
+.popUp{
+    position: relative;
+}
+
 .oldLink{
     max-width: 20em;
-    position: relative;
-    left: 0em;
     top: 1em;
 }
 
 .ss{
     max-width: 20em;
-    position: relative;
-    bottom: 0m;
     left: 30em;
 }
 
 .mc{
     max-width:30em;
-    position: relative;
-    bottom: 0m;
     left: 30em;
 }
 
 .fs{
-    max-width: 20em;
-    position: relative;
-    bottom: 0m;
+    max-width:20em;
     left: 30em;
 }
 
 .oldLink{
-   position: relative;
    bottom: 2.5em;
+   left: 30em;
+}
+
+.lp{
+    max-width: 20em;
+    left: 30em;
+}
+
+.oas{
+    max-width:30em;
+    left: 25em;
+}
+
+.linkAwaken{
+    max-width:20em;
+    left: 30em;
+}
+
+.lbw{
+    max-width: 35em;
+    left: 20em;
+}
+
+.tfw{
+    max-width: 20em;
+    left: 25em;
+}
+
+.zelda1{
+    max-width: 30em;
+    left: 25em;
+}
+
+.zelda2{
+    max-width: 15em;
+    left: 30em;
 }
 
 .timeline1{
+    display:none;
+}
+
+.timeline2{
     display:block;
 }
 
