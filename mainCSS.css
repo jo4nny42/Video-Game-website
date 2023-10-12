@@ -149,7 +149,6 @@ a:hover{
     width: 16.66%;
   }
   
-  /* Add a transparency effect for thumnbail images */
   .demo {
     opacity: 0.6;
     max-width: 40em;
@@ -161,13 +160,6 @@ a:hover{
   }
 
 .contentBorder{
-/*
-    border:5px;
-    max-width:20em;
-    margin: 40px auto;
-    border-style: solid;
-    border-radius: 10px;
-    background:linear-gradient(45deg, rgb(216, 96, 96), green, blue);*/
     display:none;
 }
 
@@ -210,6 +202,10 @@ a:hover{
 
 .timeline1{
     display:block;
+}
+
+.fallenHeroTimeline .row{
+    display: flex;
 }
 
 @font-face{
