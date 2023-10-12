@@ -171,17 +171,6 @@ a:hover{
     display:none;
 }
 
-.contentBorder2{
-        border:5px;
-        max-width:20em;
-        margin: 40px auto;
-        border-style: solid;
-        border-radius: 10px;
-        background:linear-gradient(45deg, rgb(216, 96, 96), green, blue);
-        position: relative;
-        bottom: 6em;
-}
-
 .cursor{
     cursor: pointer;
 }
