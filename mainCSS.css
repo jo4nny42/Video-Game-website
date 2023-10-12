@@ -116,12 +116,12 @@ a:hover{
     -webkit-user-select: none;
 }
 
-.nextPic, .nextPic2{
+.nextPic, .nextPic2, .nextPic3{
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-.nextPic:hover, .previousPic:hover, .nextPic2:hover, .previousPic2:hover{
+.nextPic:hover, .previousPic:hover, .nextPic2:hover, .previousPic2:hover,.nextPic3:hover, .previousPic3:hover{
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -140,7 +140,22 @@ a:hover{
     -webkit-user-select: none;
 }
 
-.capTextCont, .capTextCont2{
+.nextPic3, .previousPic3{
+    cursor: pointer;
+    position: absolute;
+    bottom: -20em;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.capTextCont, .capTextCont2,.capTextCont3{
     border: 5px;
     text-align: center;
     font-family: hyrule;
@@ -163,20 +178,17 @@ a:hover{
     width: 16.66%;
   }
   
-  .demo,.Demo {
+  .demo,.Demo,.time3 {
     opacity: 0.6;
     max-width: 40em;
   }
   
   .active,
-  .demo:hover,.Demo:hover {
+  .demo:hover,.Demo:hover,.time3:hover {
     opacity: 1;
   }
 
-.contentBorder{
-    display:none;
-}
-.contentBorder2{
+.contentBorder, .contentBorder2, .contentBorder3{
     display:none;
 }
 
@@ -204,6 +216,11 @@ a:hover{
 }
 
 .fs{
+    max-width:20em;
+    left: 30em;
+}
+
+.tp{
     max-width:20em;
     left: 30em;
 }
@@ -250,6 +267,11 @@ a:hover{
 
 .mm{
     max-width: 15em;
+    left: 30em;
+}
+
+.tp{
+    max-width: 20em;
 }
 
 .timeline1{
