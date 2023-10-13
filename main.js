@@ -1,10 +1,8 @@
-let index = 1;
-let index2 = 1;
-let index3 = 1;
+let index,index2,index3,index4 = 1;
 showSlides(index);
 showSlides2(index2);
 showSlides3(index3);
-
+showSlides4(index4);
 
 function nextSlide(n){
     showSlides(index+=n);
@@ -28,6 +26,14 @@ function nextSlide3(n){
 
 function currentSlide3(n){
   showSlides3(index3=n);
+}
+
+function nextSlide4(n){
+  showSlides4(index4+=n);
+}
+
+function currentSlide4(n){
+  showSlides4(index4=n);
 }
 
 function showSlides(n){
@@ -85,4 +91,23 @@ function showSlides3(n){
   slides[index3-1].style.display = " block";
   dots[index3-1].className += " active";
   captionText.innerHTML = dots[index3-1].alt;
+}
+
+function showSlides4(n){
+  let i;
+  let slides = document.getElementsByClassName("contentBorder4");
+  let dots = document.getElementsByClassName("time4");
+  let captionText = document.getElementById("caption4");
+  if (n > slides.length) {index4 = 1}
+  if (n < 1) {index4 = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[index4-1].style.display = " block";
+  dots[index4-1].className += " active";
+  captionText.innerHTML = dots[index4-1].alt;
 }

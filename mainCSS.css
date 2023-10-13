@@ -28,24 +28,6 @@ a{
     animation-duration: 8s;
 }
 
-.link{
-    max-width: 15em;
-    position: relative;
-    left: 0em;
-    top: .2em;
-
-}
-
-.pika{
-    position: relative;
-    top: 10.5em;
-}
-
-.max{
-    position: relative;
-    top:.63em;
-}
-
 .imgBorder{
     display:flex;
 }
@@ -116,12 +98,12 @@ a:hover{
     -webkit-user-select: none;
 }
 
-.nextPic, .nextPic2, .nextPic3{
+.nextPic, .nextPic2, .nextPic3, .nextPic4{
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-.nextPic:hover, .previousPic:hover, .nextPic2:hover, .previousPic2:hover,.nextPic3:hover, .previousPic3:hover{
+.nextPic:hover, .previousPic:hover, .nextPic2:hover, .previousPic2:hover,.nextPic3:hover, .previousPic3:hover,.nextPic4:hover, .previousPic4:hover{
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -143,7 +125,7 @@ a:hover{
 .nextPic3, .previousPic3{
     cursor: pointer;
     position: absolute;
-    bottom: -8em;
+    bottom: -5em;
     width: auto;
     padding: 16px;
     margin-top: -50px;
@@ -155,7 +137,22 @@ a:hover{
     -webkit-user-select: none;
 }
 
-.capTextCont, .capTextCont2,.capTextCont3{
+.nextPic4, .previousPic4{
+    cursor: pointer;
+    position: absolute;
+    bottom: -6em;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.capTextCont,.capTextCont2,.capTextCont3,.capTextCont4{
     border: 5px;
     text-align: center;
     font-family: hyrule;
@@ -172,23 +169,21 @@ a:hover{
     clear: both;
   }
   
-  /* Six columns side by side */
-  .collums {
+.collums {
     float: left;
     width: 16.66%;
   }
   
-  .demo,.Demo,.time3 {
+.demo,.Demo,.time3,.time4 {
     opacity: 0.6;
     max-width: 40em;
   }
   
-  .active,
-  .demo:hover,.Demo:hover,.time3:hover {
+.active, .demo:hover,.Demo:hover,.time3:hover,.time4:hover {
     opacity: 1;
   }
 
-.contentBorder, .contentBorder2, .contentBorder3{
+.contentBorder, .contentBorder2, .contentBorder3, .contentBorder4{
     display:none;
 }
 
@@ -205,6 +200,21 @@ a:hover{
     top: 1em;
 }
 
+.link{
+    max-width: 15em;
+    left: 0em;
+    top: .2em;
+
+}
+
+.pika{
+    top: 10.5em;
+}
+
+.max{
+    top:.63em;
+}
+
 .ss{
     max-width: 20em;
     left: 30em;
@@ -215,33 +225,13 @@ a:hover{
     left: 30em;
 }
 
-.fs{
-    max-width:20em;
-    left: 30em;
-}
-
-.tp{
-    max-width:20em;
-    left: 30em;
-}
-
 .oldLink{
    bottom: 2.5em;
    left: 30em;
 }
 
-.lp{
+.lp,.linkAwaken,.tp,.fs{
     max-width: 20em;
-    left: 30em;
-}
-
-.oas{
-    max-width:30em;
-    left: 25em;
-}
-
-.linkAwaken{
-    max-width:20em;
     left: 30em;
 }
 
@@ -255,7 +245,7 @@ a:hover{
     left: 25em;
 }
 
-.zelda1{
+.zelda1,.mm,.oas{
     max-width: 30em;
     left: 25em;
 }
@@ -265,13 +255,26 @@ a:hover{
     left: 30em;
 }
 
-.mm{
-    max-width: 30em;
-    left: 25em;
-}
-
 .tp{
     max-width: 20em;
+}
+
+.ww{
+    max-width: 30em;
+    left: 30em;
+    top:1.4em;
+}
+
+.phg{
+    max-width: 30em;
+    left: 20em;
+    top: 1em;
+}
+
+.st{
+    max-width: 20em;
+    left: 30em;
+    top: 1.2em;
 }
 
 .timeline1{
@@ -283,6 +286,10 @@ a:hover{
 }
 
 .timeline3{
+    display:none;
+}
+
+.timeline4{
     display:block;
 }
 
