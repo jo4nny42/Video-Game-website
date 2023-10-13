@@ -152,7 +152,7 @@ a:hover{
     -webkit-user-select: none;
 }
 
-.capTextCont,.capTextCont2,.capTextCont3,.capTextCont4{
+.capTextCont,.capTextCont2,.capTextCont3,.capTextCont4,.capTextCont5,.capTextCont6{
     border: 5px;
     text-align: center;
     font-family: hyrule;
@@ -174,16 +174,16 @@ a:hover{
     width: 16.66%;
   }
   
-.demo,.Demo,.time3,.time4 {
+.demo,.Demo,.time3,.time4,.time5,.time6{
     opacity: 0.6;
     max-width: 40em;
   }
   
-.active, .demo:hover,.Demo:hover,.time3:hover,.time4:hover {
+.active, .demo:hover,.Demo:hover,.time3:hover,.time4:hover,.time5:hover,.time6:hover {
     opacity: 1;
   }
 
-.contentBorder, .contentBorder2, .contentBorder3, .contentBorder4{
+.contentBorder, .contentBorder2, .contentBorder3, .contentBorder4,.contentBorder5,.contentBorder6{
     display:none;
 }
 
@@ -215,11 +215,6 @@ a:hover{
     top:.63em;
 }
 
-.ss{
-    max-width: 20em;
-    left: 30em;
-}
-
 .mc{
     max-width:30em;
     left: 30em;
@@ -230,7 +225,7 @@ a:hover{
    left: 30em;
 }
 
-.lp,.linkAwaken,.tp,.fs{
+.lp,.linkAwaken,.tp,.fs,.ss{
     max-width: 20em;
     left: 30em;
 }
@@ -277,6 +272,18 @@ a:hover{
     top: 1.2em;
 }
 
+.hw{
+    max-width: 30em;
+    left: 25em;
+    top: 1.2em;
+}
+
+.aoc{
+    max-width: 30em;
+    left: 28em;
+    top: 2.4em;
+}
+
 .timeline1{
     display:none;
 }
@@ -290,13 +297,13 @@ a:hover{
 }
 
 .timeline4{
-    display:block;
+    display:none;
 }
 .timeline5{
-    display:block;
+    display:none;
 }
 .timeline6{
-    display:block;
+    display:none;
 }
 
 .fallenHeroTimeline .row{
