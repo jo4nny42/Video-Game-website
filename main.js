@@ -1,35 +1,22 @@
-let index,index2,index3,index4,index5,index6 = 1;
+let index,index2,index3,index4,index5,index6,index7 = 1;
 showSlides(index);
 showSlides2(index2);
 showSlides3(index3);
 showSlides4(index4);
-
-function nextSlide(n){
-    showSlides(index+=n);
-}
+showSlides5(index5);
+showSlides6(index6);
+showSlides7(index7);
 
 function currentSlide(n){
     showSlides(index=n);
-}
-
-function nextSlide2(n){
-  showSlides2(index2+=n);
 }
 
 function currentSlide2(n){
   showSlides2(index2=n);
 }
 
-function nextSlide3(n){
-  showSlides3(index3+=n);
-}
-
 function currentSlide3(n){
   showSlides3(index3=n);
-}
-
-function nextSlide4(n){
-  showSlides4(index4+=n);
 }
 
 function currentSlide4(n){
@@ -42,6 +29,10 @@ function currentSlide5(n){
 
 function currentSlide6(n){
   showSlides6(index6=n);
+}
+
+function currentSlide7(n){
+  showSlides7(index7=n);
 }
 
 function showSlides(n){
@@ -156,4 +147,22 @@ function showSlides6(n){
   slides[index6-1].style.display = " block";
   dots[index6-1].className += " active";
   captionText.innerHTML = dots[index6-1].alt;
+}
+function showSlides7(n){
+  let i;
+  let slides = document.getElementsByClassName("contentBorder7");
+  let dots = document.getElementsByClassName("time7");
+  let captionText = document.getElementById("caption7");
+  if (n > slides.length) {index7 = 1}
+  if (n < 1) {index7 = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[index7-1].style.display = " block";
+  dots[index7-1].className += " active";
+  captionText.innerHTML = dots[index7-1].alt;
 }

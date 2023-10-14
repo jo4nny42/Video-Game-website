@@ -79,80 +79,7 @@ a:hover{
     transition-delay: .2s;   
 }
 
-.EarlyTimeline{
-    position: relative;
-}
-
-.nextPic, .previousPic{
-    cursor: pointer;
-    position: absolute;
-    bottom: 18em;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-}
-
-.nextPic, .nextPic2, .nextPic3, .nextPic4{
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.nextPic:hover, .previousPic:hover, .nextPic2:hover, .previousPic2:hover,.nextPic3:hover, .previousPic3:hover,.nextPic4:hover, .previousPic4:hover{
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.nextPic2, .previousPic2{
-    cursor: pointer;
-    position: absolute;
-    bottom: -10em;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-}
-
-.nextPic3, .previousPic3{
-    cursor: pointer;
-    position: absolute;
-    bottom: -5em;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-}
-
-.nextPic4, .previousPic4{
-    cursor: pointer;
-    position: absolute;
-    bottom: -6em;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-}
-
-.capTextCont,.capTextCont2,.capTextCont3,.capTextCont4,.capTextCont5,.capTextCont6{
+.capTextCont,.capTextCont2,.capTextCont3,.capTextCont4,.capTextCont5,.capTextCont6,.capTextCont7{
     border: 5px;
     text-align: center;
     font-family: hyrule;
@@ -163,27 +90,27 @@ a:hover{
     background:linear-gradient(45deg, rgb(216, 96, 96), green, rgb(37, 37, 180));
 }
 
-.row:after {
+.row:after{
     content: "";
     display: table;
     clear: both;
   }
   
-.collums {
+.collums{
     float: left;
     width: 16.66%;
   }
   
-.demo,.Demo,.time3,.time4,.time5,.time6{
+.demo,.Demo,.time3,.time4,.time5,.time6,.time7{
     opacity: 0.6;
     max-width: 40em;
   }
   
-.active, .demo:hover,.Demo:hover,.time3:hover,.time4:hover,.time5:hover,.time6:hover {
+.active, .demo:hover,.Demo:hover,.time3:hover,.time4:hover,.time5:hover,.time6:hover,.time7:hover{
     opacity: 1;
   }
 
-.contentBorder, .contentBorder2, .contentBorder3, .contentBorder4,.contentBorder5,.contentBorder6{
+.contentBorder, .contentBorder2, .contentBorder3, .contentBorder4,.contentBorder5,.contentBorder6,.contentBorder7{
     display:none;
 }
 
@@ -284,26 +211,45 @@ a:hover{
     top: 2.4em;
 }
 
-.timeline1{
+.boc{
+    max-width: 30em;
+    left: 25em;
+    top:2em;
+}
+
+.toc{
+    max-width: 30em;
+    left: 25em;
+    top:2em;
+}
+
+.loz{
     display:none;
+}
+
+.timeline1{
+    display:block;
 }
 
 .timeline2{
-    display:none;
+    display:block;
 }
 
 .timeline3{
-    display:none;
+    display:block;
 }
 
 .timeline4{
-    display:none;
+    display:block;
 }
 .timeline5{
-    display:none;
+    display:block;
 }
 .timeline6{
-    display:none;
+    display:block;
+}
+.timeline7{
+    display:block;
 }
 
 .fallenHeroTimeline .row{
