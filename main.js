@@ -166,3 +166,12 @@ function showSlides7(n){
   dots[index7-1].className += " active";
   captionText.innerHTML = dots[index7-1].alt;
 }
+
+function loz(){
+  let zelda = document.getElementById("zeldaTimelines");
+  if (zelda.style.display === "none"){
+    zelda.style.display = "block";
+  }else{
+    zelda.style.display = "none";
+  }
+}

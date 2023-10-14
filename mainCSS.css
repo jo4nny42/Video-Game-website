@@ -34,25 +34,24 @@ a{
 
 .overlay{
     position: absolute;
-    bottom: 0;
+    bottom: 0em;
     left:0em;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.8); /* Black see-through */
     color: #f1f1f1;
-    width: 11.5em;
+    width: 15em;
     transition: .5s ease;
     opacity:0;
     color: white;
-    font-size: 20px;
     padding: 10px;
-    text-align: center;
+    font-size: 18px;
   }
   
   .overlay:hover{
       opacity: 1;
   }
 
-.imgs{
+.imgBorder .imgs{
     max-width: 15em;
     margin: 20px;
     padding: 5px;
@@ -65,9 +64,10 @@ a{
     position:relative;
     left: 14em;
     bottom: 4em;
+    overflow: hidden;
 }
 
-.imgs:hover{
+.imgs::after{
     box-shadow: 2px 7px 15px black;
     animation-name: flippy;
     animation-iteration-count: infinite;
@@ -128,18 +128,24 @@ a:hover{
 }
 
 .link{
+    position: relative;
     max-width: 15em;
     left: 0em;
-    top: .2em;
+    top: 3em;
+}
 
+.link:hover{
+    cursor: pointer;
 }
 
 .pika{
+    position: relative;
     top: 10.5em;
 }
 
 .max{
-    top:.63em;
+    position: relative;
+    top:1.4em;
 }
 
 .mc{
@@ -252,8 +258,12 @@ a:hover{
     display:block;
 }
 
-.fallenHeroTimeline .row{
+.fallenHeroTimeline .row, .timelinePics{
     display: flex;
+}
+
+.timelinePics{
+    max-width: 10em;
 }
 
 @font-face{
