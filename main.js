@@ -158,7 +158,6 @@ function showSlides7(n){
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
@@ -167,11 +166,65 @@ function showSlides7(n){
   captionText.innerHTML = dots[index7-1].alt;
 }
 
-function loz(){
-  let zelda = document.getElementById("zeldaTimelines");
-  if (zelda.style.display === "none"){
-    zelda.style.display = "block";
+function firstTimeline(){
+  let timeline1 = document.getElementById("t1");
+  if (timeline1.style.display === "none"){
+    timeline1.style.display = "block";
   }else{
-    zelda.style.display = "none";
+    timeline1.style.display  = "none";
   }
+}
+
+function secondTimeline(){
+  let timeline2 = document.getElementById("t2");
+  if (timeline2.style.display === "none"){
+    timeline2.style.display = "block";
+  }else{
+    timeline2.style.display  = "none";
+  }
+}
+
+function thirdTimeline(){
+  let timeline2 = document.getElementById("t2");
+  let timeline3 = document.getElementById("t3");
+  let timeline4 = document.getElementById("t4");
+  let timeline5 = document.getElementById("t5");
+  let timeline6 = document.getElementById("t6");
+  let timeline7 = document.getElementById("t7");
+}
+
+function fourthTimeline(){
+  let timeline2 = document.getElementById("t2");
+  let timeline3 = document.getElementById("t3");
+  let timeline4 = document.getElementById("t4");
+  let timeline5 = document.getElementById("t5");
+  let timeline6 = document.getElementById("t6");
+  let timeline7 = document.getElementById("t7");
+}
+
+function fifthTimeline(){
+  let timeline2 = document.getElementById("t2");
+  let timeline3 = document.getElementById("t3");
+  let timeline4 = document.getElementById("t4");
+  let timeline5 = document.getElementById("t5");
+  let timeline6 = document.getElementById("t6");
+  let timeline7 = document.getElementById("t7");
+}
+
+function sixthTimeline(){
+  let timeline2 = document.getElementById("t2");
+  let timeline3 = document.getElementById("t3");
+  let timeline4 = document.getElementById("t4");
+  let timeline5 = document.getElementById("t5");
+  let timeline6 = document.getElementById("t6");
+  let timeline7 = document.getElementById("t7");
+}
+
+function seventhTimeline(){
+  let timeline2 = document.getElementById("t2");
+  let timeline3 = document.getElementById("t3");
+  let timeline4 = document.getElementById("t4");
+  let timeline5 = document.getElementById("t5");
+  let timeline6 = document.getElementById("t6");
+  let timeline7 = document.getElementById("t7");
 }

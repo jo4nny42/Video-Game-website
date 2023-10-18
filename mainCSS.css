@@ -82,13 +82,14 @@ a:hover{
     width: 16.66%;
   }
   
-.demo,.Demo,.time3,.time4,.time5,.time6,.time7,.pickOne,.pickTwo,.pickThree,.pickFour,.pickFive,.pickSix,.pickSeven{
+.demo,.Demo,.time3,.time4,.time5,.time6,.time7,.picOne,.picTwo,.picThree,.picFour,.picFive,.picSix,.picSeven{
     opacity: 0.6;
     max-width: 40em;
   }
   
-.active, .demo:hover,.Demo:hover,.time3:hover,.time4:hover,.time5:hover,.time6:hover,.time7:hover,.pickOne:hover,.pickTwo:hover,.pickThree:hover,.pickFour:hover,.pickFive:hover,.pickSix:hover,.pickSeven:hover{
+.active, .demo:hover,.Demo:hover,.time3:hover,.time4:hover,.time5:hover,.time6:hover,.time7:hover,.picOne:hover,.picTwo:hover,.picThree:hover,.picFour:hover,.picFive:hover,.picSix:hover,.picSeven:hover{
     opacity: 1;
+    cursor: pointer;
   }
 
 .contentBorder, .contentBorder2, .contentBorder3, .contentBorder4,.contentBorder5,.contentBorder6,.contentBorder7{
@@ -211,15 +212,15 @@ a:hover{
 }
 
 .loz{
-    display:none;
+    display:block;
 }
 
 .timeline1{
-    display:block;
+    display:none;
 }
 
 .timeline2{
-    display:block;
+    display:none;
 }
 
 .timeline3{
@@ -227,16 +228,16 @@ a:hover{
 }
 
 .timeline4{
-    display:block;
+    display:none;
 }
 .timeline5{
-    display:block;
+    display:none;
 }
 .timeline6{
-    display:block;
+    display:none;
 }
 .timeline7{
-    display:block;
+    display:none;
 }
 
 .fallenHeroTimeline .row, .timelinePics{
