@@ -185,46 +185,46 @@ function secondTimeline(){
 }
 
 function thirdTimeline(){
-  let timeline2 = document.getElementById("t2");
   let timeline3 = document.getElementById("t3");
-  let timeline4 = document.getElementById("t4");
-  let timeline5 = document.getElementById("t5");
-  let timeline6 = document.getElementById("t6");
-  let timeline7 = document.getElementById("t7");
+  if (timeline3.style.display === "none"){
+    timeline3.style.display = "block";
+  }else{
+    timeline3.style.display  = "none";
+  }
 }
 
 function fourthTimeline(){
-  let timeline2 = document.getElementById("t2");
-  let timeline3 = document.getElementById("t3");
   let timeline4 = document.getElementById("t4");
-  let timeline5 = document.getElementById("t5");
-  let timeline6 = document.getElementById("t6");
-  let timeline7 = document.getElementById("t7");
+  if (timeline4.style.display === "none"){
+    timeline4.style.display = "block";
+  }else{
+    timeline4.style.display  = "none";
+  }
 }
 
 function fifthTimeline(){
-  let timeline2 = document.getElementById("t2");
-  let timeline3 = document.getElementById("t3");
-  let timeline4 = document.getElementById("t4");
   let timeline5 = document.getElementById("t5");
-  let timeline6 = document.getElementById("t6");
-  let timeline7 = document.getElementById("t7");
+  if (timeline5.style.display === "none"){
+    timeline5.style.display = "block";
+  }else{
+    timeline5.style.display  = "none";
+  }
 }
 
 function sixthTimeline(){
-  let timeline2 = document.getElementById("t2");
-  let timeline3 = document.getElementById("t3");
-  let timeline4 = document.getElementById("t4");
-  let timeline5 = document.getElementById("t5");
   let timeline6 = document.getElementById("t6");
-  let timeline7 = document.getElementById("t7");
+  if (timeline6.style.display === "none"){
+    timeline6.style.display = "block";
+  }else{
+    timeline6.style.display  = "none";
+  }
 }
 
 function seventhTimeline(){
-  let timeline2 = document.getElementById("t2");
-  let timeline3 = document.getElementById("t3");
-  let timeline4 = document.getElementById("t4");
-  let timeline5 = document.getElementById("t5");
-  let timeline6 = document.getElementById("t6");
   let timeline7 = document.getElementById("t7");
+  if (timeline7.style.display === "none"){
+    timeline7.style.display = "block";
+  }else{
+    timeline7.style.display  = "none";
+  }
 }
