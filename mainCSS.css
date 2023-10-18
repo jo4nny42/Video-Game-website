@@ -4,7 +4,7 @@
 
 .linkImages{
     display:inline-block;
-    max-width:20em;
+
 }
 
 html{
@@ -30,26 +30,9 @@ a{
 
 .imgBorder{
     display:flex;
+    position:relative;
+    left: 35em;
 }
-
-.overlay{
-    position: absolute;
-    bottom: 0em;
-    left:0em;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.8); /* Black see-through */
-    color: #f1f1f1;
-    width: 15em;
-    transition: .5s ease;
-    opacity:0;
-    color: white;
-    padding: 10px;
-    font-size: 18px;
-  }
-  
-  .overlay:hover{
-      opacity: 1;
-  }
 
 .imgBorder .imgs{
     max-width: 15em;
@@ -61,17 +44,15 @@ a{
     border-radius: 10px;
     height: 380px;
     background:linear-gradient(45deg, rgb(216, 96, 96), green, blue);
-    position:relative;
-    left: 14em;
     bottom: 4em;
-    overflow: hidden;
+
 }
 
-.imgs::after{
+.imgs:hover{
     box-shadow: 2px 7px 15px black;
     animation-name: flippy;
     animation-iteration-count: infinite;
-    animation-duration: 8s;
+    animation-duration: 10s;
 }
 
 a:hover{
@@ -101,12 +82,12 @@ a:hover{
     width: 16.66%;
   }
   
-.demo,.Demo,.time3,.time4,.time5,.time6,.time7{
+.demo,.Demo,.time3,.time4,.time5,.time6,.time7,.pickOne,.pickTwo,.pickThree,.pickFour,.pickFive,.pickSix,.pickSeven{
     opacity: 0.6;
     max-width: 40em;
   }
   
-.active, .demo:hover,.Demo:hover,.time3:hover,.time4:hover,.time5:hover,.time6:hover,.time7:hover{
+.active, .demo:hover,.Demo:hover,.time3:hover,.time4:hover,.time5:hover,.time6:hover,.time7:hover,.pickOne:hover,.pickTwo:hover,.pickThree:hover,.pickFour:hover,.pickFive:hover,.pickSix:hover,.pickSeven:hover{
     opacity: 1;
   }
 
@@ -264,6 +245,8 @@ a:hover{
 
 .timelinePics{
     max-width: 10em;
+    position: absolute;
+    left: 25em;
 }
 
 @font-face{
@@ -289,7 +272,7 @@ a:hover{
 
 @keyframes title{
     0%{transform: translateX(-14em);}
-    100%{transform: translateX(10px);}
+    100%{transform: translateX(.25em);}
 }
 
 @keyframes flippy{
