@@ -9,6 +9,7 @@
 
 html{
     background-color: rgb(69, 171, 100);
+    width: 100%;
 }
 
 img{
@@ -28,10 +29,30 @@ a{
     animation-duration: 8s;
 }
 
+.speech{
+    max-width: 20%;
+    height:10em;
+    position: relative;
+    left: 48em;
+    top: 9em;
+}
+
+.txtBox img{
+    background:linear-gradient(45deg, rgb(216, 96, 96), green, blue);
+    border-radius: 72px;
+    z-index: -1;
+}
+
+.click{
+    text-align: center;
+    font-size: 3em;
+}
+
 .imgBorder{
     display:flex;
     position:relative;
     left: 35em;
+    max-width: 1000px;
 }
 
 .imgBorder .imgs{
@@ -79,7 +100,12 @@ a:hover{
 .collums{
     float: left;
     width: 16.66%;
-  }
+}
+
+.pokeCollums{
+    float: left;
+    width: 9%;
+}
   
 .demo,.Demo,.time3,.time4,.time5,.time6,.time7,.picOne,.picTwo,.picThree,.picFour,.picFive,.picSix,.picSeven,.p1,.lisGame{
     opacity: 0.6;
@@ -134,7 +160,7 @@ a:hover{
 
 .mc{
     max-width:30em;
-    left: 30em;
+    left: 50em;
 }
 
 .oldLink{
@@ -144,27 +170,27 @@ a:hover{
 
 .lp,.linkAwaken,.tp,.fs,.ss{
     max-width: 20em;
-    left: 30em;
+    left: 50em;
 }
 
 .lbw{
     max-width: 35em;
-    left: 20em;
+    left: 50em;
 }
 
 .tfw{
     max-width: 20em;
-    left: 25em;
+    left: 50em;
 }
 
 .zelda1,.mm,.oas{
     max-width: 30em;
-    left: 25em;
+    left: 50em;
 }
 
 .zelda2{
     max-width: 15em;
-    left: 30em;
+    left: 50em;
 }
 
 .tp{
@@ -173,43 +199,43 @@ a:hover{
 
 .ww{
     max-width: 30em;
-    left: 30em;
+    left: 50em;
     top:1.4em;
 }
 
 .phg{
     max-width: 30em;
-    left: 20em;
+    left: 50em;
     top: 1em;
 }
 
 .st{
     max-width: 20em;
-    left: 30em;
+    left: 50em;
     top: 1.2em;
 }
 
 .hw{
     max-width: 30em;
-    left: 25em;
+    left: 50em;
     top: 1.2em;
 }
 
 .aoc{
     max-width: 30em;
-    left: 28em;
+    left: 50em;
     top: 2.4em;
 }
 
 .boc{
     max-width: 30em;
-    left: 25em;
+    left: 50em;
     top:2em;
 }
 
 .toc{
     max-width: 30em;
-    left: 25em;
+    left: 50em;
     top:2em;
 }
 
