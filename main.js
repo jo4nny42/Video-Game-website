@@ -1,4 +1,4 @@
-let index,index2,index3,index4,index5,index6,index7 = 1;
+let index,index2,index3,index4,index5,index6,index7,poke1 = 1;
 showSlides(index);
 showSlides2(index2);
 showSlides3(index3);
@@ -6,6 +6,7 @@ showSlides4(index4);
 showSlides5(index5);
 showSlides6(index6);
 showSlides7(index7);
+showPokemon(poke1);
 
 function currentSlide(n){
     showSlides(index=n);
@@ -33,6 +34,10 @@ function currentSlide6(n){
 
 function currentSlide7(n){
   showSlides7(index7=n);
+}
+
+function currentSlide8(n){
+  showPokemon(poke1 = n);
 }
 
 function showSlides(n){
@@ -166,6 +171,24 @@ function showSlides7(n){
   captionText.innerHTML = dots[index7-1].alt;
 }
 
+function showPokemon(n){
+  let i;
+  let slides = document.getElementsByClassName("pokemonBorder");
+  let dots = document.getElementsByClassName("p1");
+  let captionText = document.getElementById("pokeCaption");
+  if (n > slides.length) {poke1 = 1}
+  if (n < 1) {poke1 = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[poke1-1].style.display = " block";
+  dots[poke1-1].className += " active";
+  captionText.innerHTML = dots[poke1-1].alt;
+}
+
 function firstTimeline(){
   let timeline1 = document.getElementById("t1");
   if (timeline1.style.display === "none"){
@@ -226,5 +249,17 @@ function seventhTimeline(){
     timeline7.style.display = "block";
   }else{
     timeline7.style.display  = "none";
+  }
+}
+
+function loz(){
+  let showtimeline = document.getElementById("timelineOptions");
+  let timelines = document.getElementById("zeldaTimelines");
+  if (showtimeline.style.display === "none"){
+    showtimeline.style.display = "block";
+    timelines.style.display = "block";
+  }else{
+    showtimeline.style.display  = "none";
+    timelines.style.display = "none";
   }
 }

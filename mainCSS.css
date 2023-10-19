@@ -47,20 +47,19 @@ a{
     bottom: 4em;
 
 }
-
-.imgs:hover{
+/*.imgs:hover{
     box-shadow: 2px 7px 15px black;
     animation-name: flippy;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
     animation-duration: 10s;
-}
+}*/
 
 a:hover{
     color:rgb(255, 255, 255);
     transition-delay: .2s;   
 }
 
-.capTextCont,.capTextCont2,.capTextCont3,.capTextCont4,.capTextCont5,.capTextCont6,.capTextCont7{
+.capTextCont,.capTextCont2,.capTextCont3,.capTextCont4,.capTextCont5,.capTextCont6,.capTextCont7,.textContainer{
     border: 5px;
     text-align: center;
     font-family: hyrule;
@@ -82,17 +81,17 @@ a:hover{
     width: 16.66%;
   }
   
-.demo,.Demo,.time3,.time4,.time5,.time6,.time7,.picOne,.picTwo,.picThree,.picFour,.picFive,.picSix,.picSeven{
+.demo,.Demo,.time3,.time4,.time5,.time6,.time7,.picOne,.picTwo,.picThree,.picFour,.picFive,.picSix,.picSeven,.p1{
     opacity: 0.6;
     max-width: 40em;
   }
   
-.active, .demo:hover,.Demo:hover,.time3:hover,.time4:hover,.time5:hover,.time6:hover,.time7:hover,.picOne:hover,.picTwo:hover,.picThree:hover,.picFour:hover,.picFive:hover,.picSix:hover,.picSeven:hover{
+.active, .demo:hover,.Demo:hover,.time3:hover,.time4:hover,.time5:hover,.time6:hover,.time7:hover,.picOne:hover,.picTwo:hover,.picThree:hover,.picFour:hover,.picFive:hover,.picSix:hover,.picSeven:hover,.p1:hover{
     opacity: 1;
     cursor: pointer;
   }
 
-.contentBorder, .contentBorder2, .contentBorder3, .contentBorder4,.contentBorder5,.contentBorder6,.contentBorder7{
+.contentBorder, .contentBorder2, .contentBorder3, .contentBorder4,.contentBorder5,.contentBorder6,.contentBorder7,.pokemonBorder{
     display:none;
 }
 
@@ -212,7 +211,7 @@ a:hover{
 }
 
 .loz{
-    display:block;
+    display:none;
 }
 
 .timeline1{
@@ -238,6 +237,10 @@ a:hover{
 }
 .timeline7{
     display:none;
+}
+
+.timelineOptions{
+    display:block;
 }
 
 .fallenHeroTimeline .row, .timelinePics{
