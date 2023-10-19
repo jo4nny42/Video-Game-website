@@ -263,6 +263,10 @@ a:hover{
     left: 25em;
 }
 
+.pokemon{
+    display: none;
+}
+
 @font-face{
     font-family: sunday_pasta;
     src:url(sunday_pasta/Sunday\ Pasta.ttf);
