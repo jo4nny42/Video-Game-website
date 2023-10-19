@@ -93,6 +93,9 @@ a:hover{
 
 .contentBorder, .contentBorder2, .contentBorder3, .contentBorder4,.contentBorder5,.contentBorder6,.contentBorder7,.pokemonBorder,.lisBorder{
     display:none;
+    animation-name: test;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
 }
 
 .cursor{
@@ -263,6 +266,10 @@ a:hover{
     display: none;
 }
 
+.lifeIsStrange{
+    display: none;
+}
+
 @font-face{
     font-family: sunday_pasta;
     src:url(sunday_pasta/Sunday\ Pasta.ttf);
@@ -279,9 +286,9 @@ a:hover{
 }
 
 @keyframes test{
-    0%{transform: translateY(0em);}
+    0%{transform: translateY(-3em);}
     50%{transform: translateY(3em);}
-    100%{transform: translateY(0em);}
+    100%{transform: translateY(-3em);}
 }
 
 @keyframes title{
