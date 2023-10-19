@@ -263,3 +263,12 @@ function loz(){
     timelines.style.display = "none";
   }
 }
+
+function pokemonDisplay(){
+  let pokemonShow = document.getElementById("pkDiv");
+  if (pokemonShow.style.display === "none"){
+    pokemonShow.style.display = "block";
+  }else{
+    pokemonShow.style.display = "none";
+  }
+}

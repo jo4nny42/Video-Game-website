@@ -210,6 +210,16 @@ a:hover{
     top:2em;
 }
 
+.gen1,.gen2,.gen3,.gen4,.gen5,.gen6,.gen7,.gen8,.gen9,.gen10,.gen11{
+    max-width: 30em;
+    position: relative;
+    left: 45em;
+}
+
+.pika:hover{
+    cursor: pointer;
+}
+
 .loz{
     display:none;
 }
@@ -239,8 +249,8 @@ a:hover{
     display:none;
 }
 
-.timelineOptions{
-    display:block;
+#timelineOptions{
+    display:none;
 }
 
 .fallenHeroTimeline .row, .timelinePics{
