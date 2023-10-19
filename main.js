@@ -1,4 +1,4 @@
-let index,index2,index3,index4,index5,index6,index7,poke1 = 1;
+let index,index2,index3,index4,index5,index6,index7,poke1, lisIndex = 1;
 showSlides(index);
 showSlides2(index2);
 showSlides3(index3);
@@ -7,6 +7,7 @@ showSlides5(index5);
 showSlides6(index6);
 showSlides7(index7);
 showPokemon(poke1);
+showLis(lisIndex);
 
 function currentSlide(n){
     showSlides(index=n);
@@ -38,6 +39,10 @@ function currentSlide7(n){
 
 function currentSlide8(n){
   showPokemon(poke1 = n);
+}
+
+function currentSlide9(n){
+  showLis(lisIndex = n);
 }
 
 function showSlides(n){
@@ -189,6 +194,24 @@ function showPokemon(n){
   captionText.innerHTML = dots[poke1-1].alt;
 }
 
+function showLis(n){
+  let i;
+  let slides = document.getElementsByClassName("lisBorder");
+  let dots = document.getElementsByClassName("lisGame");
+  let captionText = document.getElementById("lisCaption");
+  if (n > slides.length) {lisIndex = 1}
+  if (n < 1) {lisIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[lisIndex-1].style.display = " block";
+  dots[lisIndex-1].className += " active";
+  captionText.innerHTML = dots[lisIndex-1].alt;
+}
+
 function firstTimeline(){
   let timeline1 = document.getElementById("t1");
   if (timeline1.style.display === "none"){
@@ -270,5 +293,14 @@ function pokemonDisplay(){
     pokemonShow.style.display = "block";
   }else{
     pokemonShow.style.display = "none";
+  }
+}
+
+function lisDisplay(){
+  let lisShow = document.getElementById("lis");
+  if (lisShow.style.display === "none"){
+    lisShow.style.display = "block";
+  }else{
+    lisShow.style.display = "none";
   }
 }

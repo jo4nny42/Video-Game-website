@@ -59,7 +59,7 @@ a:hover{
     transition-delay: .2s;   
 }
 
-.capTextCont,.capTextCont2,.capTextCont3,.capTextCont4,.capTextCont5,.capTextCont6,.capTextCont7,.textContainer{
+.capTextCont,.capTextCont2,.capTextCont3,.capTextCont4,.capTextCont5,.capTextCont6,.capTextCont7,.textContainer,.lisCap{
     border: 5px;
     text-align: center;
     font-family: hyrule;
@@ -81,17 +81,17 @@ a:hover{
     width: 16.66%;
   }
   
-.demo,.Demo,.time3,.time4,.time5,.time6,.time7,.picOne,.picTwo,.picThree,.picFour,.picFive,.picSix,.picSeven,.p1{
+.demo,.Demo,.time3,.time4,.time5,.time6,.time7,.picOne,.picTwo,.picThree,.picFour,.picFive,.picSix,.picSeven,.p1,.lisGame{
     opacity: 0.6;
     max-width: 40em;
   }
   
-.active, .demo:hover,.Demo:hover,.time3:hover,.time4:hover,.time5:hover,.time6:hover,.time7:hover,.picOne:hover,.picTwo:hover,.picThree:hover,.picFour:hover,.picFive:hover,.picSix:hover,.picSeven:hover,.p1:hover{
+.active, .demo:hover,.Demo:hover,.time3:hover,.time4:hover,.time5:hover,.time6:hover,.time7:hover,.picOne:hover,.picTwo:hover,.picThree:hover,.picFour:hover,.picFive:hover,.picSix:hover,.picSeven:hover,.p1:hover,.lisGame:hover{
     opacity: 1;
     cursor: pointer;
   }
 
-.contentBorder, .contentBorder2, .contentBorder3, .contentBorder4,.contentBorder5,.contentBorder6,.contentBorder7,.pokemonBorder{
+.contentBorder, .contentBorder2, .contentBorder3, .contentBorder4,.contentBorder5,.contentBorder6,.contentBorder7,.pokemonBorder,.lisBorder{
     display:none;
 }
 
@@ -115,7 +115,7 @@ a:hover{
     top: 3em;
 }
 
-.link:hover{
+.link:hover, .pika:hover,.max:hover{
     cursor: pointer;
 }
 
@@ -210,14 +210,10 @@ a:hover{
     top:2em;
 }
 
-.gen1,.gen2,.gen3,.gen4,.gen5,.gen6,.gen7,.gen8,.gen9,.gen10,.gen11{
+.gen1,.gen2,.gen3,.gen4,.gen5,.gen6,.gen7,.gen8,.gen9,.gen10,.gen11,.l1,.l2,.l3,.l4{
     max-width: 30em;
     position: relative;
     left: 45em;
-}
-
-.pika:hover{
-    cursor: pointer;
 }
 
 .loz{
