@@ -4,12 +4,11 @@
 
 .linkImages{
     display:inline-block;
-
+    max-width:20em;
 }
 
 html{
     background-color: rgb(69, 171, 100);
-    width: 100%;
 }
 
 a{
@@ -37,35 +36,15 @@ a{
     margin:0 auto;
 }
 
-.speech{
-    max-width: 20%;
-    height:10em;
-    position: relative;
-    left: 48em;
-    top: 9em;
-}
-
-.txtBox{
-    position: relative;
-    bottom: 10em;
-    animation-name:opaque;
-    animation-iteration-count: infinite;
-    animation-duration: 5s;
-}
-
-.txtBox img{
-    background:linear-gradient(45deg, rgb(216, 96, 96), green, blue);
-    border-radius: 72px;
-    z-index: -1;
-}
-
-.click{
-    text-align: center;
-    font-size: 3em;
-}
-
 .imgBorder{
     display:flex;
+    justify-content: center;
+    overflow:hidden;
+    min-width: 825.33px;
+}
+
+img{
+    width:100%;
 }
 
 .overlay{
@@ -96,17 +75,23 @@ a{
     border-style: solid;
     border-radius: 10px;
     background:linear-gradient(45deg, rgb(216, 96, 96), green, blue);
-    position:relative;
-    left: 14em;
-    bottom: 4em;
     overflow: hidden;
 }
 
-.imgs::after{
+.imgs{
+    max-height: 25em;
+    min-height: 15em;
+    min-width: 4em;
+}
+
+.imgs:hover{
     box-shadow: 2px 7px 15px black;
     animation-name: flippy;
-    animation-iteration-count: infinite;
     animation-duration: 8s;
+}
+
+.popUp{
+    position: relative;
 }
 
 a:hover{
@@ -114,7 +99,7 @@ a:hover{
     transition-delay: .2s;   
 }
 
-.capTextCont,.capTextCont2,.capTextCont3,.capTextCont4,.capTextCont5,.capTextCont6,.capTextCont7,.textContainer,.lisCap{
+.capTextCont,.capTextCont2,.capTextCont3,.capTextCont4,.capTextCont5,.capTextCont6,.capTextCont7{
     border: 5px;
     text-align: center;
     font-family: hyrule;
@@ -134,28 +119,19 @@ a:hover{
 .collums{
     float: left;
     width: 16.66%;
-}
-
-.pokeCollums{
-    float: left;
-    width: 9%;
-}
+  }
   
-.demo,.Demo,.time3,.time4,.time5,.time6,.time7,.picOne,.picTwo,.picThree,.picFour,.picFive,.picSix,.picSeven,.p1,.lisGame{
+.demo,.Demo,.time3,.time4,.time5,.time6,.time7{
     opacity: 0.6;
     max-width: 40em;
   }
   
-.active, .demo:hover,.Demo:hover,.time3:hover,.time4:hover,.time5:hover,.time6:hover,.time7:hover,.picOne:hover,.picTwo:hover,.picThree:hover,.picFour:hover,.picFive:hover,.picSix:hover,.picSeven:hover,.p1:hover,.lisGame:hover{
+.active, .demo:hover,.Demo:hover,.time3:hover,.time4:hover,.time5:hover,.time6:hover,.time7:hover{
     opacity: 1;
-    cursor: pointer;
   }
 
-.contentBorder, .contentBorder2, .contentBorder3, .contentBorder4,.contentBorder5,.contentBorder6,.contentBorder7,.pokemonBorder,.lisBorder{
+.contentBorder, .contentBorder2, .contentBorder3, .contentBorder4,.contentBorder5,.contentBorder6,.contentBorder7{
     display:none;
-    animation-name: test;
-    animation-iteration-count: infinite;
-    animation-duration: 3s;
 }
 
 .cursor{
@@ -172,7 +148,7 @@ a:hover{
     align-self: flex-end;
 }
 
-.link:hover, .pika:hover,.max:hover{
+.link:hover{
     cursor: pointer;
 }
 
@@ -188,7 +164,7 @@ a:hover{
 
 .mc{
     max-width:30em;
-    left: 50em;
+    left: 30em;
 }
 
 .oldLink{
@@ -198,27 +174,27 @@ a:hover{
 
 .lp,.linkAwaken,.tp,.fs,.ss{
     max-width: 20em;
-    left: 50em;
+    left: 30em;
 }
 
 .lbw{
     max-width: 35em;
-    left: 50em;
+    left: 20em;
 }
 
 .tfw{
     max-width: 20em;
-    left: 50em;
+    left: 25em;
 }
 
 .zelda1,.mm,.oas{
     max-width: 30em;
-    left: 50em;
+    left: 25em;
 }
 
 .zelda2{
     max-width: 15em;
-    left: 50em;
+    left: 30em;
 }
 
 .tp{
@@ -227,50 +203,44 @@ a:hover{
 
 .ww{
     max-width: 30em;
-    left: 50em;
+    left: 30em;
     top:1.4em;
 }
 
 .phg{
     max-width: 30em;
-    left: 50em;
+    left: 20em;
     top: 1em;
 }
 
 .st{
     max-width: 20em;
-    left: 50em;
+    left: 30em;
     top: 1.2em;
 }
 
 .hw{
     max-width: 30em;
-    left: 50em;
+    left: 25em;
     top: 1.2em;
 }
 
 .aoc{
     max-width: 30em;
-    left: 50em;
+    left: 28em;
     top: 2.4em;
 }
 
 .boc{
     max-width: 30em;
-    left: 50em;
+    left: 25em;
     top:2em;
 }
 
 .toc{
     max-width: 30em;
-    left: 50em;
+    left: 25em;
     top:2em;
-}
-
-.gen1,.gen2,.gen3,.gen4,.gen5,.gen6,.gen7,.gen8,.gen9,.gen10,.gen11,.l1,.l2,.l3,.l4{
-    max-width: 30em;
-    position: relative;
-    left: 45em;
 }
 
 .loz{
@@ -299,7 +269,7 @@ a:hover{
     display:none;
 }
 .timeline7{
-    display:block;
+    display:none;
 }
 
 .fallenHeroTimeline .row, .timelinePics{
@@ -307,7 +277,20 @@ a:hover{
 }
 
 .timelinePics{
-    max-width: 10em;
+    margin: 0 auto;
+    max-width: 20em;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.one, .two, .three, .four, .five, .six, .seven{
+    opacity: 0.6;
+}
+
+.one:hover, .two:hover, .three:hover, .four:hover, .five:hover, .six:hover, .seven:hover{
+    opacity: 1;
+    cursor: pointer;
 }
 
 @font-face{
@@ -326,24 +309,18 @@ a:hover{
 }
 
 @keyframes test{
-    0%{transform: translateY(-3em);}
+    0%{transform: translateY(0em);}
     50%{transform: translateY(3em);}
-    100%{transform: translateY(-3em);}
+    100%{transform: translateY(0em);}
 }
 
 @keyframes title{
     0%{transform: translateX(-14em);}
-    100%{transform: translateX(.25em);}
+    100%{transform: translateX(10px);}
 }
 
 @keyframes flippy{
     0% {transform:rotateY(0deg);}
     50% {transform:rotateY(360deg);}
     100% {transform:rotateY(0deg);}
-}
-
-@keyframes opaque{
-    0% {opacity:0;}
-    50% {opacity:1;}
-    100% {opacity:0;}
 }
