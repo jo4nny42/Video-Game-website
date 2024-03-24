@@ -11,12 +11,19 @@ html{
     background-color: rgb(69, 171, 100);
 }
 
-img{
-    width:100%;
-}
-
 a{
     color:black;
+}
+
+.textContainer{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.text{
+    margin: 0 auto;
+    align-self: center;
 }
 
 .title{
@@ -26,10 +33,18 @@ a{
     text-shadow: 4px 12px 12px black;
     animation-name: title;
     animation-duration: 8s;
+    margin:0 auto;
 }
 
 .imgBorder{
     display:flex;
+    justify-content: center;
+    overflow:hidden;
+    min-width: 825.33px;
+}
+
+img{
+    width:100%;
 }
 
 .overlay{
@@ -59,19 +74,24 @@ a{
     border-color: black;
     border-style: solid;
     border-radius: 10px;
-    height: 380px;
     background:linear-gradient(45deg, rgb(216, 96, 96), green, blue);
-    position:relative;
-    left: 14em;
-    bottom: 4em;
     overflow: hidden;
+}
+
+.imgs{
+    max-height: 25em;
+    min-height: 15em;
+    min-width: 4em;
 }
 
 .imgs:hover{
     box-shadow: 2px 7px 15px black;
     animation-name: flippy;
-    animation-iteration-count: infinite;
     animation-duration: 8s;
+}
+
+.popUp{
+    position: relative;
 }
 
 a:hover{
@@ -118,20 +138,14 @@ a:hover{
     cursor: pointer;
 }
 
-.popUp{
-    position: relative;
-}
-
 .oldLink{
     max-width: 20em;
     top: 1em;
 }
 
 .link{
-    position: relative;
     max-width: 15em;
-    left: 0em;
-    top: 3em;
+    align-self: flex-end;
 }
 
 .link:hover{
@@ -263,7 +277,11 @@ a:hover{
 }
 
 .timelinePics{
-    margin: 0 2em;
+    margin: 0 auto;
+    max-width: 20em;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .one, .two, .three, .four, .five, .six, .seven{
