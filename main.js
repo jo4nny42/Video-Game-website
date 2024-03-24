@@ -1,4 +1,4 @@
-let index,index2,index3,index4,index5,index6,index7 = 1;
+let index,index2,index3,index4,index5,index6,index7,poke1, lisIndex = 1;
 showSlides(index);
 showSlides2(index2);
 showSlides3(index3);
@@ -6,6 +6,8 @@ showSlides4(index4);
 showSlides5(index5);
 showSlides6(index6);
 showSlides7(index7);
+showPokemon(poke1);
+showLis(lisIndex);
 
 function currentSlide(n){
     showSlides(index=n);
@@ -33,6 +35,14 @@ function currentSlide6(n){
 
 function currentSlide7(n){
   showSlides7(index7=n);
+}
+
+function currentSlide8(n){
+  showPokemon(poke1 = n);
+}
+
+function currentSlide9(n){
+  showLis(lisIndex = n);
 }
 
 function showSlides(n){
@@ -158,7 +168,6 @@ function showSlides7(n){
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
@@ -167,6 +176,7 @@ function showSlides7(n){
   captionText.innerHTML = dots[index7-1].alt;
 }
 
+<<<<<<< HEAD
 
 let Timeline2 = document.getElementsByClassName("timeline2");
 let Timeline3 = document.getElementsByClassName("timeline3");
@@ -181,5 +191,133 @@ function earlyTimeline(){
     Timeline1.style.display = "block";
   }else{
     Timeline1.style.display = "none";
+=======
+function showPokemon(n){
+  let i;
+  let slides = document.getElementsByClassName("pokemonBorder");
+  let dots = document.getElementsByClassName("p1");
+  let captionText = document.getElementById("pokeCaption");
+  if (n > slides.length) {poke1 = 1}
+  if (n < 1) {poke1 = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[poke1-1].style.display = " block";
+  dots[poke1-1].className += " active";
+  captionText.innerHTML = dots[poke1-1].alt;
+}
+
+function showLis(n){
+  let i;
+  let slides = document.getElementsByClassName("lisBorder");
+  let dots = document.getElementsByClassName("lisGame");
+  let captionText = document.getElementById("lisCaption");
+  if (n > slides.length) {lisIndex = 1}
+  if (n < 1) {lisIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[lisIndex-1].style.display = " block";
+  dots[lisIndex-1].className += " active";
+  captionText.innerHTML = dots[lisIndex-1].alt;
+}
+
+function firstTimeline(){
+  let timeline1 = document.getElementById("t1");
+  if (timeline1.style.display === "none"){
+    timeline1.style.display = "block";
+  }else{
+    timeline1.style.display  = "none";
+  }
+}
+
+function secondTimeline(){
+  let timeline2 = document.getElementById("t2");
+  if (timeline2.style.display === "none"){
+    timeline2.style.display = "block";
+  }else{
+    timeline2.style.display  = "none";
+  }
+}
+
+function thirdTimeline(){
+  let timeline3 = document.getElementById("t3");
+  if (timeline3.style.display === "none"){
+    timeline3.style.display = "block";
+  }else{
+    timeline3.style.display  = "none";
+  }
+}
+
+function fourthTimeline(){
+  let timeline4 = document.getElementById("t4");
+  if (timeline4.style.display === "none"){
+    timeline4.style.display = "block";
+  }else{
+    timeline4.style.display  = "none";
+  }
+}
+
+function fifthTimeline(){
+  let timeline5 = document.getElementById("t5");
+  if (timeline5.style.display === "none"){
+    timeline5.style.display = "block";
+  }else{
+    timeline5.style.display  = "none";
+  }
+}
+
+function sixthTimeline(){
+  let timeline6 = document.getElementById("t6");
+  if (timeline6.style.display === "none"){
+    timeline6.style.display = "block";
+  }else{
+    timeline6.style.display  = "none";
+  }
+}
+
+function seventhTimeline(){
+  let timeline7 = document.getElementById("t7");
+  if (timeline7.style.display === "none"){
+    timeline7.style.display = "block";
+  }else{
+    timeline7.style.display  = "none";
+  }
+}
+
+function loz(){
+  let showtimeline = document.getElementById("timelineOptions");
+  let timelines = document.getElementById("zeldaTimelines");
+  if (showtimeline.style.display === "none"){
+    showtimeline.style.display = "block";
+    timelines.style.display = "block";
+  }else{
+    showtimeline.style.display  = "none";
+    timelines.style.display = "none";
+  }
+}
+
+function pokemonDisplay(){
+  let pokemonShow = document.getElementById("pkDiv");
+  if (pokemonShow.style.display === "none"){
+    pokemonShow.style.display = "block";
+  }else{
+    pokemonShow.style.display = "none";
+  }
+}
+
+function lisDisplay(){
+  let lisShow = document.getElementById("lis");
+  if (lisShow.style.display === "none"){
+    lisShow.style.display = "block";
+  }else{
+    lisShow.style.display = "none";
+>>>>>>> 541d9cfa757d67d08f0489d3283921917be5c2b5
   }
 }
