@@ -67,7 +67,7 @@ a{
     overflow: hidden;
 }
 
-.imgs::after{
+.imgs:hover{
     box-shadow: 2px 7px 15px black;
     animation-name: flippy;
     animation-iteration-count: infinite;
@@ -234,28 +234,28 @@ a:hover{
 }
 
 .timeline1{
-    display:block;
+    display:none;
 }
 
 .timeline2{
-    display:block;
+    display:none;
 }
 
 .timeline3{
-    display:block;
+    display:none;
 }
 
 .timeline4{
-    display:block;
+    display:none;
 }
 .timeline5{
-    display:block;
+    display:none;
 }
 .timeline6{
-    display:block;
+    display:none;
 }
 .timeline7{
-    display:block;
+    display:none;
 }
 
 .fallenHeroTimeline .row, .timelinePics{
@@ -263,7 +263,16 @@ a:hover{
 }
 
 .timelinePics{
-    max-width: 10em;
+    margin: 0 2em;
+}
+
+.one, .two, .three, .four, .five, .six, .seven{
+    opacity: 0.6;
+}
+
+.one:hover, .two:hover, .three:hover, .four:hover, .five:hover, .six:hover, .seven:hover{
+    opacity: 1;
+    cursor: pointer;
 }
 
 @font-face{

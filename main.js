@@ -167,11 +167,19 @@ function showSlides7(n){
   captionText.innerHTML = dots[index7-1].alt;
 }
 
-function loz(){
-  let zelda = document.getElementById("zeldaTimelines");
-  if (zelda.style.display === "none"){
-    zelda.style.display = "block";
+
+let Timeline2 = document.getElementsByClassName("timeline2");
+let Timeline3 = document.getElementsByClassName("timeline3");
+let Timeline4 = document.getElementsByClassName("timeline4");
+let Timeline5 = document.getElementsByClassName("timeline5");
+let Timeline6 = document.getElementsByClassName("timeline6");
+let Timeline7 = document.getElementsByClassName("timeline7");
+
+function earlyTimeline(){
+  let Timeline1 = document.getElementById("t1");
+  if (Timeline1.style.display === "none"){
+    Timeline1.style.display = "block";
   }else{
-    zelda.style.display = "none";
+    Timeline1.style.display = "none";
   }
 }

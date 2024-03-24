@@ -15,7 +15,7 @@
     <br>
 <div class = "imgBorder">
         <div class="imgs">
-            <img src = "Images/test2.gif" class="link popUp" onclick="loz()">
+            <img src = "Images/test2.gif" class="link popUp">
             <div class = "overlay"><h2>Legend of Zelda</h2></div>
         </div>       
 
@@ -31,19 +31,18 @@
     </div>
 
 <br>
-<div class = "timelinePics">
-<img src = "Images/ss.webp" class = "popUp">
-    <img src ="Images/kisspng-the-legend-of-zelda-a-link-to-the-past-the-legend-link-pixel-art-24x24-bing-images-5b62ce9464c403.7427141015332020684127.png" class = "popUp">
-    <img src = "Images/mm.webp" class = "popUp">
-    <img src = "Images/ww.png" class = "popUp">
-    <img src = "Images/hw.webp" class = "popUp">
-    <img src = "Images/aoc.webp" class = "popUp">
-    <img src = "Images/bow.png" class = "popUp">
+<div class = "timelinePics collums">
+    <img src = "Images/ss.webp" class = "one popUp" onclick = "earlyTimeline()">
+    <img src ="Images/kisspng-the-legend-of-zelda-a-link-to-the-past-the-legend-link-pixel-art-24x24-bing-images-5b62ce9464c403.7427141015332020684127.png" class = "two popUp">
+    <img src = "Images/mm.webp" class = "three popUp">
+    <img src = "Images/ww.png" class = "four popUp">
+    <img src = "Images/hw.webp" class = "five popUp">
+    <img src = "Images/aoc.webp" class = "six popUp">
+    <img src = "Images/bow.png" class = "seven popUp">
 </div>
-
 <div class ="loz" id = "zeldaTimelines">
     <!--Beginning timeline-->
-    <div class = "timeline1">
+    <div class = "timeline1" id = "t1">
     <div class ="EarlyTimeline">
         
         <div class ="contentBorder">
@@ -85,7 +84,7 @@
     </div>
     </div>
     <!--Fallen hero timeline-->
-    <div class = "timeline2">
+    <div class = "timeline2"id = "t2">
         <div class = "fallenHeroTimeline">
             <div class = "contentBorder2">
                 <img src ="Images/kisspng-the-legend-of-zelda-a-link-to-the-past-the-legend-link-pixel-art-24x24-bing-images-5b62ce9464c403.7427141015332020684127.png" class = "lp popUp">
@@ -159,7 +158,7 @@
         </div>
     </div>
     <!--Child timeline-->
-    <div class = "timeline3">
+    <div class = "timeline3" id = "t3">
         <div class = "childTimeline">
             <div class = "contentBorder3">
                 <img src = "Images/mm.webp" class = "mm popUp">
